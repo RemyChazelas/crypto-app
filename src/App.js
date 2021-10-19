@@ -33,10 +33,13 @@ const App = () => (
         </div>
       </Layout>
       <div className="footer">
-        <Typography.Title level={5} style={{ color: 'white', textAlign: 'center' }}>Copyright © 2021
-          <Link to="/">
-            Cryptoverse Inc.
-          </Link> <br />
+        <Typography.Title level={5} style={{ textAlign: 'center' }}>Copyright © 2021<br />
+          <a
+            href="https://remychazelas.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Remy Chazelas          </a> <br />
           All Rights Reserved.
         </Typography.Title>
         <Space>

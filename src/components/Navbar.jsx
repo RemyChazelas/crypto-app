@@ -3,6 +3,8 @@ import { Button, Menu, Typography, Avatar } from 'antd';
 import { Link } from 'react-router-dom';
 import { HomeOutlined, MoneyCollectOutlined, BulbOutlined, FundOutlined, MenuOutlined } from '@ant-design/icons';
 
+import 'antd/dist/antd.css';
+
 import icon from '../images/cryptocurrency.png';
 
 const Navbar = () => {
@@ -29,13 +31,13 @@ const Navbar = () => {
 
   return (
     <div className="nav-container">
-      <div className="logo-container">
-        <Avatar src={icon} size="large" />
-        <Typography.Title level={2} className="logo"><Link to="/">Cryptoverse</Link></Typography.Title>
+      <div className="logo-container" >
+        <Avatar src={icon} size="default" shape="square"/>
+        <Typography.Title level={2} className="logo"><Link to="/">Crypto-App</Link></Typography.Title>
         <Button className="menu-control-container" onClick={() => setActiveMenu(!activeMenu)}><MenuOutlined /></Button>
       </div>
       {activeMenu && (
-      <Menu theme="dark">
+      <Menu className='activeMenu' theme="light">
         <Menu.Item icon={<HomeOutlined />}>
           <Link to="/">Home</Link>
         </Menu.Item>

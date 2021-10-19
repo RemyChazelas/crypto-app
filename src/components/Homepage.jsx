@@ -18,6 +18,7 @@ console.log(data);
 
   return (
     <>
+    
       <Title level={2} className="heading">Global Crypto Stats</Title>
       <Row gutter={[32, 32]}>
         <Col span={12}><Statistic title="Total Cryptocurrencies" value={globalStats.total} /></Col>
